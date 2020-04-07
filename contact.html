@@ -1,0 +1,138 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Online Newspaper</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="assets/font/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/font/font.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css" media="screen" />
+</head>
+<body>
+<div class="body_wrapper">
+  <div class="center">
+    <div class="header_area">
+      <div class="logo floatleft"><div class="logo floatleft">
+	<a href="#"><h1>Newspaper</h1></a>
+      </div></div>
+      <div class="top_menu floatleft">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="Subscribe.html">Subscribe</a></li>
+          <li><a href="sign in.html">sign in</a></li>
+        </ul>
+      </div>
+      <div class="social_plus_search floatright">
+        <div class="social">
+          <ul>
+            <li><a href="#" class="twitter"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+            <li><a href="#" class="feed"></a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <form action="#" method="post" id="search_form">
+            <input type="text" value="Search news" id="s" />
+            <input type="submit" id="searchform" value="search" />
+            <input type="hidden" value="post" name="post_type" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="main_menu_area">
+      <ul id="nav">
+       <li><a href="International.html">International</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="Politics.html">politics</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="EDUCATION.HTML">Education</a></li>
+      </ul>
+    </div>
+    <div class="slider_area">
+    </div>
+    <div class="content_area">
+      <div class="panel panel-default">
+		<div class="panel-body">
+			<form action="" class="form-group" method="post">
+				<div class="form-group">
+					<label for="name">Name: </label>
+					<input type="text" name="name" placeholder="Enter name" class="form-control" id="name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email: </label>
+					<input type="email" name="email" placeholder="Enter email" class="form-control" id="email">
+				</div>
+				<div>
+				<label for="mobile">Mobile Number:</label><br/>
+				<input type="number" value="Enter Mobile Number" class="form-control" placeholder="Mobile Number" id="num">
+				</div><br/>
+				<div class="form-group">
+					<label for="message">Message: </label>
+					<textarea class="form-control" rows="5" placeholder="enter your review" id="message"></textarea>
+				</div>
+				<form method="POST" >
+				<input type="submit" value="submit" name="Submit" onclick="kc()" class="btn btn-default"></form>
+			</form>
+		</div>
+	  </div>
+    </div>
+	<script>
+function kc() 
+{
+    var retVal = confirm("Do you want to Submit?");
+               if( retVal == true ){
+                  document.write ("Your Details are sucessfully submitted");
+                  return true;
+               }
+               else{
+                  document.write ("Your Details are not submitted!");
+                  return false;
+               }
+}
+</script>
+
+    <div class="footer_bottom_area">
+      <div class="footer_menu">
+        <ul id="f_menu">
+          <li><a href="#">International</a></li>
+          <li><a href="#">sports</a></li>
+          <li><a href="#">business</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">entertainment</a></li>
+          <li><a href="#">Education</a></li>
+        </ul>
+      </div>
+      <div class="copyright_text">
+        <p>Copyright &copy; 2018 Newspaper Inc. All rights reserved.Designed by Krishna Chaitanya</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="assets/js/jquery-min.js"></script> 
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.bxslider.js"></script> 
+<script type="text/javascript" src="assets/js/selectnav.min.js"></script> 
+<script type="text/javascript">
+selectnav('nav', {
+    label: '-Navigation-',
+    nested: true,
+    indent: '-'
+});
+selectnav('f_menu', {
+    label: '-Navigation-',
+    nested: true,
+    indent: '-'
+});
+$('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true
+});
+</script>
+</body>
+</html>
